@@ -1,0 +1,24 @@
+/* card style */
+
+.card{
+  display: flex;
+  width: 500px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  /* background-color: red; */
+}
+
+.card img{
+  margin-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.card h1, .card h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: rgba(0, 0, 0, 0.5)
+}

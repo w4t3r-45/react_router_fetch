@@ -1,0 +1,23 @@
+/* nav style */
+
+.nv{
+  background-color: #f4f4f4;
+  padding: 0px 50px;
+}
+
+.nv ul li a {
+  text-decoration:none;
+  display: inherit;
+  padding: 20px 30px;
+}
+
+.nv ul li{
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nv ul li:hover{
+  background-color: #fff;
+}
+

@@ -1,0 +1,44 @@
+/* css reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto' , sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* styling pagination */
+
+.pgn_container{
+  /* background-color: red; */
+  width: 300px;
+}
+
+.pgn_container ul{
+  display: flex;
+}
+
+
+.pg_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius:4px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 2px;
+  font-size: .8rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+

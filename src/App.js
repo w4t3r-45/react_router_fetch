@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
-function App() {
+import Nav from './components/nav';
+import Items from './components/items';
+import ItemDetails from './components/itDetails';
+import Home from './components/home';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* this part would be shared between all components it has links to routes*/}
+      <Nav/>    
+
+      {/* here we handle our routes declared using LINK */}
+      <Switch>
+        <Route  path="/" exact>
+          <Home/>
+        </Route>
+        <Route path="/items" exact>
+          <Items /> 
+        </Route>
+        <Route path="/items/:id" component={ItemDetails}/>
+
+        <Route path="/it" exact>
+            <h1>test</h1> 
+        </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
